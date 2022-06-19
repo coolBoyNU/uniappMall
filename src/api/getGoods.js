@@ -11,4 +11,8 @@ export function getNav() {
 export function getFloor() {
     return uniAxsi.get('/api/public/v1/home/floordata');
 }
+//分类
+export function getCate() {
+    return uniAxsi.get('/api/public/v1/categories');
+}
 //# sourceMappingURL=getGoods.js.map

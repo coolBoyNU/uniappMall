@@ -19,4 +19,8 @@ export function getCate() {
 export function getSearch(data) {
     return uniAxsi.get('/api/public/v1/goods/qsearch', { query: data });
 }
+//商品列表数据
+export function getGoods(data) {
+    return uniAxsi.get('/api/public/v1/goods/search', data);
+}
 //# sourceMappingURL=getGoods.js.map

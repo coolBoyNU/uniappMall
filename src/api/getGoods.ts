@@ -24,3 +24,8 @@ export function getCate(){
 export function getSearch(data){
   return (uniAxsi as any).get('/api/public/v1/goods/qsearch', { query: data })
 }
+
+//商品列表数据
+export function getGoods(data){
+  return (uniAxsi as any).get('/api/public/v1/goods/search',data)
+}

@@ -1,5 +1,9 @@
 <template>
   <view class="home">
+    <!-- 自定义搜索组件 -->
+    <view class="search-box">
+    <my-search @clickInput='gotoSearch'></my-search>
+    </view>
     <!-- 轮播图 -->
     <swiper indicator-dots autoplay circular indicator-active-color="#dddddd">
       <swiper-item v-for="(item, i) in swiperList" :key="i">
@@ -70,12 +74,25 @@ export default {
       const { data: res } = await getFloor();
       if (res.meta.status !== 200) return uni.$DogMsg();
       this.floorList = res.message;
+    },
+    gotoSearch(){
+      //跳转分包中的搜索页面
+      uni.navigateTo({
+        url:'/subpkg/search/search'
+      })
     }
   }
 };
 </script>
 
 <style lang="scss">
+  //设置收缩框 吸顶效果
+  .search-box{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
 //轮播图
 swiper {
   height: 330rpx;

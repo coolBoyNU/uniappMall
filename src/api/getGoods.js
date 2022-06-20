@@ -15,4 +15,8 @@ export function getFloor() {
 export function getCate() {
     return uniAxsi.get('/api/public/v1/categories');
 }
+// 获取搜索建议
+export function getSearch(data) {
+    return uniAxsi.get('/api/public/v1/goods/qsearch', { query: data });
+}
 //# sourceMappingURL=getGoods.js.map

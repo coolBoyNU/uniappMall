@@ -13,7 +13,7 @@
             "path" : "pages/cart/cart",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                // "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             
@@ -22,7 +22,7 @@
             "path" : "pages/cate/cate",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                // "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             
@@ -31,7 +31,7 @@
             "path" : "pages/my/my",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                // "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             
@@ -72,7 +72,16 @@
                     "path" : "goods_detail/goods_detail",
                     "style" :                                                                                    
                 {
-                    "navigationBarTitleText": "",
+                    // "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "search/search",
+                    "style" :                                                                                    
+                {
+                    // "navigationBarTitleText": "",
                     "enablePullDownRefresh": false
                 }
                 
@@ -82,7 +91,7 @@
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "达尔优",
+		"navigationBarTitleText": "乖乖兔优购",
 		"navigationBarBackgroundColor": "#1296db",
 		"backgroundColor": "#F8F8F8"
 	}
